@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Trial Post!
+title: Trial Post!
 ---
 
 This is a trial post.
