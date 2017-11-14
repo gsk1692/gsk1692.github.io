@@ -5,11 +5,11 @@ permalink: /about/
 ---
 <table>
 	<tr>
-		<td width="400" style="float: left;">
+		<td width="600" style="float: left;">
 			Hey there folks! 
-			<br>
+			<br><br>
 			My name is <b>Gokul S Krishnan</b>. I am currently pursuing <b>Ph.D. in Department of Information Technology, specializing in Healthcare Analytics and Informatics in the National Institute of Technology Karnataka, Surathkal, INDIA</b>. 
-			<br>
+			<br><br>
 			My research interests Semantic Web, Information Retrieval, Knowledge and Data Sciences, Natural Language Processing, etc. I love Web and App development.
 			<br><br>
 			I love to listen to all forms of music and I am an amateur singer (mostly Indian songs).
