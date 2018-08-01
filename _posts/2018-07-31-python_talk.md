@@ -3,9 +3,6 @@ layout: post
 title: Python Talk at BLDEACET!
 ---
 
-<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
-<script type="text/javascript" src="../bootstrap.min.js"></script>
-
 <div class="container">
   <p>Delivered a 4-day talk at BLDEACET, Vijayapura (Bijapur), Karnataka from 26th July to 29th July 2018 on "<i>Web Application Development using Python</i>".</p>
   <p>The talk covered various topics on Flask Framework and also on current resesarch trends and how Python can be put to use to great extent.</p>
