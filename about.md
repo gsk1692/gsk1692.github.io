@@ -3,6 +3,16 @@ layout: page
 title: About
 permalink: /about/
 ---
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123220776-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123220776-1');
+</script>
+
 <table>
 	<tr>
 		<td width="590" style="text-align: justify; float: left;">
