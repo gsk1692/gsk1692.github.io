@@ -5,25 +5,27 @@ layout: default
 <script type="text/javascript" src="bootstrap.min.js"></script>
 
 <div class="container">
-	Welcome! 
+	<h1>Welcome!</h1>
 	<br><br>
 	My name is <b>Gokul S Krishnan</b>. I am currently pursuing <b>Ph.D. in Department of Information Technology, specializing in Healthcare Analytics and Informatics in the National Institute of Technology Karnataka, Surathkal, INDIA</b>. 
 	<br><br>
 	My research interests Semantic Web, Information Retrieval, Knowledge and Data Sciences, Natural Language Processing, etc. I love Web and App development.
 
+	<h1>Blog Posts</h1>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	<div class="posts">
+	  {% for post in site.posts %}
+	    <article class="post">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+	      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+	      <div class="entry">
+	        {{ post.excerpt }}
+	      </div>
+
+	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	    </article>
+	  {% endfor %}
+	</div>
 </div>
