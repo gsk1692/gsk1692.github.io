@@ -11,7 +11,7 @@ title: Python Talk at BLDEACET!
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="../images/bldeacet/talk1.jpg" target="_blank">
-          <img src="../images/bldeacet/talk1.jpg" class="img-rounded" align="left" alt="Talk at BLDEACET" style="width:100%">
+          <img src="../images/bldeacet/talk1.jpg" class="img-rounded" align="left" alt="Talk at BLDEACET" >
           <div class="caption">
           </div>
         </a>
@@ -20,7 +20,7 @@ title: Python Talk at BLDEACET!
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="../images/bldeacet/talk2.jpg" target="_blank">
-          <img src="../images/bldeacet/talk2.jpg" class="img-rounded" align="center" alt="Talk at BLDEACET" style="width:100%">
+          <img src="../images/bldeacet/talk2.jpg" class="img-rounded" align="center" alt="Talk at BLDEACET" >
           <div class="caption">
             <p></p>
           </div>
@@ -30,7 +30,7 @@ title: Python Talk at BLDEACET!
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="../images/bldeacet/talk3.jpg" target="_blank">
-          <img src="../images/bldeacet/talk3.jpg" class="img-rounded" align="right" alt="Talk at BLDEACET" style="width:100%">
+          <img src="../images/bldeacet/talk3.jpg" class="img-rounded" align="right" alt="Talk at BLDEACET" >
           <div class="caption">
             <p></p>
           </div>
