@@ -6,7 +6,8 @@ permalink: /posts/
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <script type="text/javascript" src="bootstrap.min.js"></script>
 
-<div class="posts">
+<div class="container">
+	<div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
@@ -19,4 +20,5 @@ permalink: /posts/
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+</div>
 </div>
