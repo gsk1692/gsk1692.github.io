@@ -6,6 +6,8 @@ title: Python Talk at BLDEACET!
 <div class="container">
   <p>Delivered a 4-day talk at BLDEACET, Vijayapura (Bijapur), Karnataka from 26th July to 29th July 2018 on "<i>Web Application Development using Python</i>".</p>
   <p>The talk covered various topics on Flask Framework and also on current resesarch trends and how Python can be put to use to great extent.</p>
+  <p>The students gave good feedbacks and suggestions. More pleasing things were the attentiveness and willingness of the students to learn and unmatchable hospitality by the organizers! Will visit the place again if destiny permits :)</p>
+  <p>Oh yeah! They were kind enough to take me to popular monuments like Golgumbaaz and Ibrahim Roza :D</p>
   <h3>Images</h3>
   <div class="row">
     <div class="col-md-4">
