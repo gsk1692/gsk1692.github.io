@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ICDCN 2019 @ IISc Bangalore!
+title: My Journal is online!
 ---
 <link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
 <script type="text/javascript" src="../bootstrap.min.js"></script>
