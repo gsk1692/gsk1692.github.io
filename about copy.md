@@ -36,10 +36,10 @@ permalink: /about/
 	
 </p>
 
-### Contact me
+<h4>Contact me</h4>
 
-E-mail: [gsk1692@gmail.com](mailto:gsk1692@gmail.com)
+<p>E-mail: <a href="mailto:gsk1692@gmail.com">gsk1692@gmail.com</a></p>
 
-Visit Institute Page : <a target="_blank" href="http://infotech.nitk.ac.in/research-scholars/gokul-s-krishnan-0">Here</a>
+<p>Visit Institute Page : <a target="_blank" href="http://infotech.nitk.ac.in/research-scholars/gokul-s-krishnan-0">Click Here</a></p>
 
 </div>
