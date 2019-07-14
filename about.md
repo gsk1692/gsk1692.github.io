@@ -24,7 +24,7 @@ permalink: /about/
 			<br><br>
 			I love to listen to all forms of music and I am an amateur singer (mostly Indian songs).
 			<br><br>
-			I love to read fiction and watch movies. I write poetry (or a humble set of words, I should tell) at times as a hobby and few of my poems are available <a href="http://allpoetry.com/Gokul_S_Krishnan">here</a>. I am an animal lover and encourage animal protection activities. I also love photography and love to travel a lot.
+			I love to read fiction and watch movies. I write poetry (or a humble set of words, I should call them) at times as a hobby and few of my poems are available <a href="http://allpoetry.com/Gokul_S_Krishnan">here</a>. I am an animal lover and encourage animal protection activities. I also love photography and love to travel a lot.
 			<br><br>
 
 		</td>
