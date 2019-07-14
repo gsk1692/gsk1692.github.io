@@ -12,7 +12,7 @@ permalink: /about/
 
   gtag('config', 'UA-123220776-1');
 </script>
-<!-- <div class="container"> -->
+<div class="container">
 <table>
 	<tr>
 		<td width="590" style="text-align: justify; float: left;">
@@ -44,4 +44,4 @@ E-mail: [gsk1692@gmail.com](mailto:gsk1692@gmail.com)
 
 Visit Institute Page : <a target="_blank" href="http://infotech.nitk.ac.in/research-scholars/gokul-s-krishnan-0">Here</a>
 
-<!-- </div> -->
+</div>
