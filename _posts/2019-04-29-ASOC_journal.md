@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Journal is online!
+title: My ASOC Journal is online!
 ---
 <link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
 <script type="text/javascript" src="../bootstrap.min.js"></script>
