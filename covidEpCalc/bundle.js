@@ -23465,7 +23465,7 @@
     			t388 = text(".");
     			t389 = space();
     			p5 = element("p");
-    			t390 = text("Credits to Original Author: Gabriel Gaboh ");
+    			t390 = text("Credits to Original Author: Gabriel Gabgoh ");
     			a18 = element("a");
     			a18.textContent = "(Twitter)";
     			t392 = text(" This page presents modified version of Gabriel's Epidemic Calculator. ");
