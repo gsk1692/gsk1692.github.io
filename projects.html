@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123220776-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123220776-1');
+</script>
+
+
+<div class="container">
+	<div class="posts">
+    {% for post in site.projects %}
+        <article class="post">
+
+        <h2><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h2>
+
+        <div class="entry">
+            {{ project.excerpt }}
+        </div>
+        <br>
+        <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
+        </article>
+    {% endfor %}
+    </div>
+</div>
+
+
