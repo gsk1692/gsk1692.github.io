@@ -5,6 +5,7 @@ permalink: /projects/
 ---
 
 <div class="container">
+    <p>Projects found: {{ site.projects.size }}</p>
     {% for project in site.projects %}
         <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
 
@@ -14,6 +15,10 @@ permalink: /projects/
         <br>
         <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
     {% endfor %}
+    
+    {% if site.projects.size == 0 %}
+        <p>No projects found. Check _config.yml for collection setup.</p>
+    {% endif %}
 </div>
 
 
