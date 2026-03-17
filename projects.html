@@ -6,13 +6,15 @@ permalink: /projects/
 
 <div class="container">
     {% for project in site.projects %}
-        <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
+        <article class="post">
+            <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
 
-        <div class="entry">
-            {{ project.description }}
-        </div>
-        <br>
-        <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
+            <div class="entry">
+                {{ project.description }}
+            </div>
+            <br>
+            <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
+        </article>
     {% endfor %}
 </div>
 
