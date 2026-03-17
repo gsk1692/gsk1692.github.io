@@ -15,8 +15,7 @@ permalink: /projects/
   gtag('config', 'UA-123220776-1');
 </script>
 
-<div class="container">
-	<div class="posts">
+<div class="posts">
     {% for project in site.projects %}
         <article class="post">
             <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
@@ -29,6 +28,5 @@ permalink: /projects/
         </article>
     {% endfor %}
 	</div>
-</div>
 
 
