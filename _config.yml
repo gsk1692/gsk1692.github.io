@@ -52,6 +52,7 @@ baseurl: ""
 collections:
   projects:
     output: true
+    permalink: /projects/:name/
 
 #
 # !! You don't need to change any of the configuration flags below !!
