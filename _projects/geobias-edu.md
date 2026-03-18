@@ -20,7 +20,7 @@ areas: education
 
 <h2>Safe GenAl for Education: Analyzing QA Safety in LMs</h2>
 
-**Team**: Gokul S Krishnan, Aditya Raj, Sanjay Bankapur, Abhilash CB, and Manjunath K. Vanahalli.
+**Team**: Aditya Raj, Gokul S Krishnan, Sanjay Bankapur, Abhilash CB, and Manjunath K. Vanahalli.
 
 <p style="text-align: justify">
 <b>Short Description:</b> In the age of Artificial Intelligence, Large Language Models (LLMs) have become mighty question-answering (QA) tools, which increasingly shape the way students find and use information. Despite their outstanding performance on a wide range of domains, their propensity to "hallucinate" or make assertive but wrong answers turns their dependability in an educational setting into a point of worry. This research examines whether students can rely on LLMs when asking academic queries. We focus on the SQuAD 2.0 dataset, which incorporates both answerable and explicitly unanswerable queries, to assess the capability of state-of-the-art open-source LLMs in distinguishing correct answers from instances where no valid response is available. Particularly, experiments with various state-of-the-art 7-8 billion parameter models on representative validation samples from the SQuAD 2.0 dataset show strengths as well as limitations in state-of-the-art practices. Our results underscore the need for ethical and interpretable AI in learning, where avoiding dissemination of erroneous information is as vital as furnishing accurate responses. This effort helps toward developing guidelines that support safe LLM deployment within student learning environments.
