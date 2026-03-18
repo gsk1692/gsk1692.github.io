@@ -3,7 +3,7 @@ layout: project
 title: Fairness and Accuracy in the Indian Legal Context
 status: completed
 description: Incorporating Safety Through Accuracy and Fairness (InSaAF) - Checking readiness of LLMs in the Indian Legal Domain.
-theme: deployability, safety, society
+theme: fairness
 areas: legal
 ---
 

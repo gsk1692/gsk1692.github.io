@@ -3,7 +3,7 @@ layout: project
 title: Stereotype Detection in the Indian Context (English)
 status: completed
 description: A Dataset and Bias Evaluation Framework for LLMs in the Indian Context
-theme: deployability, safety, society
+theme: fairness
 areas: healthcare
 ---
 
