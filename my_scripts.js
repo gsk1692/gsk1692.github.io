@@ -1,17 +1,27 @@
 var slideIndex = 1;
-showDivs(slideIndex);
+
+// Only initialize slideshow if elements exist
+var slides = document.getElementsByClassName("mySlides");
+if (slides.length > 0) {
+  showDivs(slideIndex);
+}
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  var slides = document.getElementsByClassName("mySlides");
+  if (slides.length > 0) {
+    showDivs(slideIndex += n);
+  }
 }
 
 function showDivs(n) {
+  var slides = document.getElementsByClassName("mySlides");
+  if (slides.length === 0) return; // Exit if no slides found
+
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
 }
