@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold !important;
 
   line-height: 1.7 !important;
-  margin: 0em 0px !important;
+  margin: 1em 0 15px !important;
   padding: 0 !important;
 
   @include mobile {
@@ -89,7 +89,7 @@ body h1,
   font-size: 28px !important;
   font-family: $helveticaNeue !important;
   color: $darkerGray !important;
-  margin: 1em 0 15px !important;
+  margin: 0em 0px !important;
   padding: 0 !important;
 }
 
