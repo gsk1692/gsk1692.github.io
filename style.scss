@@ -59,17 +59,40 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $helveticaNeue !important;
+  color: $darkerGray !important;
+  font-weight: bold !important;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+  line-height: 1.7 !important;
+  margin: 1em 0 15px !important;
+  padding: 0 !important;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.4 !important;
   }
+}
+
+/* Strong heading overrides to prevent user-agent styles on index/posts */
+body h1,
+.container h1,
+.posts h1,
+.post h1 {
+  font-size: 30px !important;
+  font-family: $helveticaNeue !important;
+  color: $darkerGray !important;
+  margin: 1em 0 15px !important;
+  padding: 0 !important;
+}
+
+body h2,
+.container h2,
+.posts h2,
+.post h2 {
+  font-size: 24px !important;
+  font-family: $helveticaNeue !important;
+  color: $darkerGray !important;
+  margin: 1em 0 15px !important;
+  padding: 0 !important;
 }
 
 h1 {
