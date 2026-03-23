@@ -61,7 +61,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue !important;
   color: $darkerGray !important;
-  font-weight: bold !important;
+  font-weight: bold;
 
   line-height: 1.7 !important;
   margin: 1em 0 15px !important;
