@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p.site-description {
-  margin: 0em 0 15px !important;
+  margin: 0em 0px !important;
 }
 
 /* Strong heading overrides to prevent user-agent styles on index/posts */
@@ -280,7 +280,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  // margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
