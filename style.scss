@@ -319,7 +319,11 @@ footer {
   text-align: center;
 }
 
-/* Ensure uniform main content padding so index/posts match other pages */
+/*
+  Base container/masthead spacing lock (consistent across all pages)
+  - Put layout space control here to avoid per-page drift
+  - If you must adjust margins, change only these values
+*/
 #main {
   padding-top: 20px;
   padding-bottom: 20px;
