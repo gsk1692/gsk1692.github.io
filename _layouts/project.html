@@ -6,8 +6,18 @@ layout: default
 	<h1>{{ page.title }}</h1>
     <p><b>Project One Liner:</b> {{ page.description }}</p>
     <p><b>Status:</b> {{ page.status }}</p>
-    <p><b>Project Theme:</b> <span class="badge badge-primary">{{ page.theme }}</span></p>
-    <p><b>Project Areas:</b> <span class="badge badge-secondary">{{ page.areas }}</span></p>
+    <p><b>Project Theme:</b> 
+      {% assign project_themes = page.theme | split: "," %}
+      {% for theme in project_themes %}
+        <span class="badge badge-primary">{{ theme | strip }}</span>
+      {% endfor %}
+    </p>
+    <p><b>Project Areas:</b> 
+      {% assign project_areas = page.areas | split: "," %}
+      {% for area in project_areas %}
+        <span class="badge badge-secondary">{{ area | strip }}</span>
+      {% endfor %}
+    </p>
     <p>{{ content }}</p>
     <p></p>
     <a href="{{ site.baseurl }}/projects"><button class="btn btn-primary">Back to Projects</button></a>

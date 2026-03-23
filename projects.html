@@ -22,16 +22,34 @@ permalink: /projects/
   <div class="tag-filters mb-4">
     <h3>Filter by Theme:</h3>
     <div class="tags">
-      {% assign themes = site.projects | map: 'theme' | uniq %}
-      {% for theme in themes %}
+      {% assign all_themes = "" | split: "," %}
+      {% for project in site.projects %}
+        {% assign project_themes = project.theme | split: "," %}
+        {% for theme in project_themes %}
+          {% assign theme_trim = theme | strip %}
+          {% unless all_themes contains theme_trim %}
+            {% assign all_themes = all_themes | push: theme_trim %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+      {% for theme in all_themes %}
         <button class="tag-btn btn btn-outline-primary" data-filter="theme" data-value="{{ theme }}">{{ theme }}</button>
       {% endfor %}
     </div>
     
     <h3>Filter by Area:</h3>
     <div class="tags">
-      {% assign areas = site.projects | map: 'areas' | uniq %}
-      {% for area in areas %}
+      {% assign all_areas = "" | split: "," %}
+      {% for project in site.projects %}
+        {% assign project_areas = project.areas | split: "," %}
+        {% for area in project_areas %}
+          {% assign area_trim = area | strip %}
+          {% unless all_areas contains area_trim %}
+            {% assign all_areas = all_areas | push: area_trim %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+      {% for area in all_areas %}
         <button class="tag-btn btn btn-outline-secondary" data-filter="area" data-value="{{ area }}">{{ area }}</button>
       {% endfor %}
     </div>
@@ -48,8 +66,14 @@ permalink: /projects/
                 {{ project.description }}
             </div>
             <div class="project-tags">
-              <span class="badge badge-primary">{{ project.theme }}</span>
-              <span class="badge badge-secondary">{{ project.areas }}</span>
+              {% assign project_themes = project.theme | split: "," %}
+              {% for theme in project_themes %}
+                <span class="badge badge-primary">{{ theme | strip }}</span>
+              {% endfor %}
+              {% assign project_areas = project.areas | split: "," %}
+              {% for area in project_areas %}
+                <span class="badge badge-secondary">{{ area | strip }}</span>
+              {% endfor %}
             </div>
             <br>
             <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
@@ -95,11 +119,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function filterPosts() {
     posts.forEach(post => {
-      const theme = post.getAttribute('data-theme');
-      const area = post.getAttribute('data-area');
+      const themeStr = post.getAttribute('data-theme');
+      const areaStr = post.getAttribute('data-area');
       
-      const themeMatch = !activeFilters.theme || theme === activeFilters.theme;
-      const areaMatch = !activeFilters.area || area === activeFilters.area;
+      const themeMatch = !activeFilters.theme || themeStr.split(',').map(t => t.trim()).includes(activeFilters.theme);
+      const areaMatch = !activeFilters.area || areaStr.split(',').map(a => a.trim()).includes(activeFilters.area);
       
       if (themeMatch && areaMatch) {
         post.style.display = 'block';
