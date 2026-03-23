@@ -73,8 +73,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Remove bold from h1 specifically */
-.site-info h1 p {
+.site-info h1 {
   font-weight: normal !important;
+}
+
+p.site-description {
   margin: 1em 0 15px !important;
 }
 
