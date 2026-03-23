@@ -16,19 +16,99 @@ permalink: /projects/
 </script>
 
 <div class="container">
-<div class="posts">
+  <h1>Projects</h1>
+  
+  <!-- Tag Filters -->
+  <div class="tag-filters mb-4">
+    <h3>Filter by Theme:</h3>
+    <div class="tags">
+      {% assign themes = site.projects | map: 'theme' | uniq %}
+      {% for theme in themes %}
+        <button class="tag-btn btn btn-outline-primary" data-filter="theme" data-value="{{ theme }}">{{ theme }}</button>
+      {% endfor %}
+    </div>
+    
+    <h3>Filter by Area:</h3>
+    <div class="tags">
+      {% assign areas = site.projects | map: 'areas' | uniq %}
+      {% for area in areas %}
+        <button class="tag-btn btn btn-outline-secondary" data-filter="area" data-value="{{ area }}">{{ area }}</button>
+      {% endfor %}
+    </div>
+    
+    <button class="clear-filters btn btn-light">Clear Filters</button>
+  </div>
+  
+  <div class="posts">
     {% for project in site.projects %}
-        <article class="post">
-            <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
+        <article class="post" data-theme="{{ project.theme }}" data-area="{{ project.areas }}">
+            <h2><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h2>
 
             <div class="entry">
                 {{ project.description }}
+            </div>
+            <div class="project-tags">
+              <span class="badge badge-primary">{{ project.theme }}</span>
+              <span class="badge badge-secondary">{{ project.areas }}</span>
             </div>
             <br>
             <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
         </article>
     {% endfor %}
-	</div>
+  </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tagButtons = document.querySelectorAll('.tag-btn');
+  const clearButton = document.querySelector('.clear-filters');
+  const posts = document.querySelectorAll('.post');
+  let activeFilters = { theme: null, area: null };
+
+  tagButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const filterType = this.getAttribute('data-filter');
+      const filterValue = this.getAttribute('data-value');
+      
+      if (activeFilters[filterType] === filterValue) {
+        // Toggle off
+        activeFilters[filterType] = null;
+        this.classList.remove('active');
+      } else {
+        // Toggle on, remove previous
+        if (activeFilters[filterType]) {
+          document.querySelector(`[data-filter="${filterType}"][data-value="${activeFilters[filterType]}"]`).classList.remove('active');
+        }
+        activeFilters[filterType] = filterValue;
+        this.classList.add('active');
+      }
+      
+      filterPosts();
+    });
+  });
+
+  clearButton.addEventListener('click', function() {
+    activeFilters = { theme: null, area: null };
+    tagButtons.forEach(btn => btn.classList.remove('active'));
+    filterPosts();
+  });
+
+  function filterPosts() {
+    posts.forEach(post => {
+      const theme = post.getAttribute('data-theme');
+      const area = post.getAttribute('data-area');
+      
+      const themeMatch = !activeFilters.theme || theme === activeFilters.theme;
+      const areaMatch = !activeFilters.area || area === activeFilters.area;
+      
+      if (themeMatch && areaMatch) {
+        post.style.display = 'block';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  }
+});
+</script>
 
 
