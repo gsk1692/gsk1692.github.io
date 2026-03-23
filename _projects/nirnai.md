@@ -4,7 +4,7 @@ title: AI Safety & Evaluation
 status: ongoing
 description: Coming up with evaluation frameworks and understanding model learning representations w.r.t safety
 theme: safety
-areas: all
+areas: 
 ---
 
 **Team**: Gokul S Krishnan, Balaraman Ravindran

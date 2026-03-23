@@ -3,11 +3,11 @@ layout: project
 title: Participatory AI in AI Dev & Governance
 status: completed
 description: A Principled Approach and Case Studies on Participatory AI
-theme: governance, policy
-areas: healthcare, safety
+theme: policy, safety, governance
+areas: healthcare
 ---
 
-**Team**: Gokul S Krishnan, Yogesh Tripathi, Raghav Donakanti, Sahil Girhepuje, Ishan Kavathekar, Bhaskara Hanuma Vedula, Anmol Goel, Shreya Goyal, Balaraman Ravindran, Ponnurangam Kumaraguru
+**Team**: Ambreesh Parthasarathy, Aditya Phalnikar, Gokul S Krishnan, Ameen Jauhar and Balaraman Ravindran
 
 **Collaborators**: Vidhi Centre for Legal Policy
 
