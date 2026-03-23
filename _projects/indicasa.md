@@ -4,7 +4,7 @@ title: Stereotype Detection in the Indian Context (English)
 status: completed
 description: A Dataset and Bias Evaluation Framework for LLMs in the Indian Context
 theme: fairness
-areas: healthcare
+areas: safety
 ---
 
 **Team**: Gokul S Krishnan, Santhosh GS, Akshay Govind, Balaraman Ravindran, Sriraam Natarajan
