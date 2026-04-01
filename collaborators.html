@@ -1,0 +1,181 @@
+---
+layout: default
+title: Collaborators
+permalink: /collaborators/
+---
+
+<h1>Collaborators</h1>
+
+<p>Below is a list of all collaborators I have worked with across various research projects:</p>
+
+<div class="collaborators-list">
+  <div class="collaborator-item">
+    <div class="collaborator-header">
+      <div class="collaborator-logos">
+        <div class="collaborator-logo-placeholder">
+          <img src="/images/collaborators/starling-logo.png" alt="StARLinG Lab Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="logo-fallback">[Logo: StARLinG Lab]</div>
+        </div>
+        <div class="collaborator-logo-placeholder">
+          <img src="/images/collaborators/utd-logo.png" alt="UT Dallas Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="logo-fallback">[Logo: UT Dallas]</div>
+        </div>
+      </div>
+      <h3>StARLinG Lab, UT Dallas</h3>
+    </div>
+    <p><strong>Key Collaborator:</strong> Sriraam Natarajan</p>
+    <p><strong>Project:</strong> <a href="/projects/indicasa/">Stereotype Detection in the Indian Context (English)</a></p>
+    <p><strong>Description:</strong> Collaboration on developing a dataset and bias evaluation framework for LLMs in the Indian context.</p>
+  </div>
+
+  <div class="collaborator-item">
+    <div class="collaborator-header">
+      <div class="collaborator-logos">
+        <div class="collaborator-logo-placeholder">
+          <img src="/images/collaborators/precog_iiitd_logo.jpeg" alt="Precog Labs Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="logo-fallback">[Logo: Precog Labs]</div>
+        </div>
+        <div class="collaborator-logo-placeholder">
+          <img src="/images/collaborators/iiith-logo.png" alt="IIIT Hyderabad Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="logo-fallback">[Logo: IIIT Hyderabad]</div>
+        </div>
+      </div>
+      <h3>Precog Labs, IIIT Hyderabad</h3>
+    </div>
+    <p><strong>Key Collaborator:</strong> Ponnurangam Kumaraguru</p>
+    <p><strong>Projects:</strong></p>
+    <ul>
+      <li><a href="/projects/insaaf/">Fairness and Accuracy in the Indian Legal Context (InSaAF)</a></li>
+    </ul>
+    <p><strong>Description:</strong> Multiple collaborations focusing on fairness, accuracy, and safety in legal and other domains.</p>
+  </div>
+
+  <div class="collaborator-item">
+    <div class="collaborator-header">
+      <div class="collaborator-logos">
+        <div class="collaborator-logo-placeholder">
+          <img src="/images/collaborators/vidhi-logo.png" alt="Vidhi Centre for Legal Policy Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="logo-fallback">[Logo: Vidhi Centre]</div>
+        </div>
+      </div>
+      <h3>Vidhi Centre for Legal Policy</h3>
+    </div>
+    <p><strong>Key Collaborators:</strong> Aditya Phalnikar, Ameen Jauhar</p>
+    <p><strong>Project:</strong> <a href="/projects/pai/">Participatory AI in AI Dev & Governance</a></p>
+    <p><strong>Description:</strong> Collaboration on legal policy and AI research initiatives, focusing on participatory approaches in AI development and governance.</p>
+  </div>
+</div>
+
+<style>
+.collaborators-list {
+  margin-top: 2rem;
+}
+
+.collaborator-item {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.collaborator-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.collaborator-logos {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.collaborator-logo-placeholder {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.collaborator-logo-placeholder img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-fallback {
+  color: #999;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.5rem;
+  display: none;
+}
+
+.collaborator-item h3 {
+  color: #007bff;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.collaborator-item p {
+  margin-bottom: 0.5rem;
+}
+
+.collaborator-item ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.collaborator-item a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.collaborator-item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .collaborator-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .collaborator-logos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .collaborator-logo-placeholder {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  
+  .collaborator-logo-placeholder img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .collaborator-item {
+    padding: 1rem;
+  }
+  
+  .collaborator-item h3 {
+    font-size: 1.25rem;
+  }
+}
+</style>
