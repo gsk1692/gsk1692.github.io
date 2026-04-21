@@ -2,7 +2,7 @@
 layout: project
 title: Evaluating Natural Language Explanations
 status: completed
-description: Incorporating Safety Through Accuracy and Fairness (InSaAF) - Checking readiness of LLMs in the Indian Legal Domain.
+description: Evaluating trustworthiness of natural language explanations in medical QA
 theme: explainability
 areas: healthcare
 ---
